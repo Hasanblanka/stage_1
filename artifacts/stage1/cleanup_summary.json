@@ -1,0 +1,80 @@
+{
+  "source_revision": "11cabd333e6d16531b8dd96d2198bc291d383cd3",
+  "policy_version": "1.0",
+  "raw_sha256_before": "25adafdcbb182fcb524b458abeca3e25ef073c519804783f6b06f9d933609b5a",
+  "raw_sha256_after": "25adafdcbb182fcb524b458abeca3e25ef073c519804783f6b06f9d933609b5a",
+  "raw_unchanged": true,
+  "records_before": 100,
+  "records_after": 90,
+  "records_changed": 76,
+  "records_unchanged": 14,
+  "records_removed": 10,
+  "removed_ids": [
+    59,
+    60,
+    61,
+    68,
+    69,
+    71,
+    75,
+    80,
+    81,
+    92
+  ],
+  "spans_before": 835,
+  "spans_after": 609,
+  "label_counts_before": {
+    "AMOUNT": 83,
+    "COMPANY": 8,
+    "JOB": 100,
+    "LOCATION": 101,
+    "ORGANIZATION": 80,
+    "PERSON": 153,
+    "PRODUCT": 87,
+    "TIMEDATE": 164,
+    "WORKOFART": 59
+  },
+  "label_counts_after": {
+    "AMOUNT": 65,
+    "JOB": 58,
+    "LOCATION": 60,
+    "ORGANIZATION": 82,
+    "PERSON": 91,
+    "PRODUCT": 81,
+    "TIMEDATE": 122,
+    "WORKOFART": 50
+  },
+  "automatic_audit_after": {
+    "records_total": 90,
+    "unique_indices": 90,
+    "spans_total": 609,
+    "label_counts": {
+      "PERSON": 91,
+      "ORGANIZATION": 82,
+      "LOCATION": 60,
+      "TIMEDATE": 122,
+      "PRODUCT": 81,
+      "WORKOFART": 50,
+      "JOB": 58,
+      "AMOUNT": 65
+    },
+    "unknown_label_counts": {},
+    "issues_total": 17,
+    "issue_counts": {
+      "BOUNDARY_PUNCTUATION": 3,
+      "FUNCTION_WORD_BOUNDARY": 12,
+      "POSSESSIVE_INCLUDED": 2
+    },
+    "severity_counts": {
+      "warning": 17
+    },
+    "records_with_errors": 0,
+    "records_with_warnings": 12,
+    "records_flagged": 12,
+    "records_without_automatic_flags": 78
+  },
+  "output_files": {
+    "jsonl": "data/processed/stage1_cleaned/stage1_cleaned.jsonl",
+    "parquet": "data/processed/stage1_cleaned/stage1_cleaned.parquet"
+  }
+}

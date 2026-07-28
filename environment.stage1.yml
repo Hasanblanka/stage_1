@@ -1,0 +1,12 @@
+name: machinelearning
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.13
+  - pip
+  - pip:
+      - huggingface-hub==1.13.0
+      - pandas==3.0.2
+      - pyarrow==24.0.0
+      - PyYAML==6.0.3
+      - reportlab==4.5.0

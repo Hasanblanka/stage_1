@@ -1,0 +1,919 @@
+policy_version: '1.0'
+source_revision: 11cabd333e6d16531b8dd96d2198bc291d383cd3
+remove_records:
+- unique_index: 59
+  reason: A long unrelated random-word fragment follows a useful opening.
+- unique_index: 60
+  reason: Severe recurring encoding corruption appears throughout the text.
+- unique_index: 61
+  reason: Severe OCR errors prevent reliable annotation.
+- unique_index: 68
+  reason: Severe recurring encoding corruption appears throughout the text.
+- unique_index: 69
+  reason: Severe recurring encoding corruption appears throughout the text.
+- unique_index: 71
+  reason: Severe recurring encoding corruption appears throughout the text.
+- unique_index: 75
+  reason: Severe recurring encoding corruption appears throughout the text.
+- unique_index: 80
+  reason: Keyword spam and meaningless word lists dominate the text.
+- unique_index: 81
+  reason: The text contains severe multi-layer encoding corruption.
+- unique_index: 92
+  reason: The record contains generated nonsense and mixed-language fragments.
+records:
+  0:
+    reason: Corrected the work-title label and removed a vague time word.
+    remove:
+    - label: PRODUCT
+      value: Hollyoaks
+    - label: TIMEDATE
+      value: moment
+    add:
+    - label: WORKOFART
+      value: Hollyoaks
+  1:
+    reason: Merged full person names and corrected a monetary amount and an invalid time span.
+    remove:
+    - label: PERSON
+      value: Manny
+    - label: PERSON
+      value: Pacquiao
+    - label: PERSON
+      value: Floyd
+    - label: PERSON
+      value: Mayweather
+    - label: TIMEDATE
+      value: 300m
+    - label: TIMEDATE
+      value: clash
+    add:
+    - label: PERSON
+      value: Manny Pacquiao
+    - label: PERSON
+      value: Floyd Mayweather
+    - label: AMOUNT
+      value: 300m
+    - label: TIMEDATE
+      value: 36-year-old
+  2:
+    reason: Corrected missing and incomplete work-title spans.
+    remove:
+    - label: WORKOFART
+      value: 'of Bandits: From Greed to Generosity'
+    add:
+    - label: WORKOFART
+      value: 'Burglar''s Grace: Right from Wrongdoing'
+    - label: WORKOFART
+      value: 'Vindication of Bandits: From Greed to Generosity'
+  3:
+    reason: Removed a generic psychology field from the organization label.
+    remove:
+    - label: ORGANIZATION
+      value: transpersonal psychology
+  4:
+    reason: Corrected restaurant and casino names as organizations based on context.
+    remove:
+    - label: LOCATION
+      value: Sahara
+    - label: LOCATION
+      value: chipotle
+    - label: LOCATION
+      value: cosmopolitans
+    add:
+    - label: ORGANIZATION
+      value: Sahara
+    - label: ORGANIZATION
+      value: chipotle
+    - label: ORGANIZATION
+      value: cosmopolitans
+    - label: AMOUNT
+      value: '3'
+  5:
+    reason: Merged a split person name and added age expressions.
+    remove:
+    - label: PERSON
+      value: Adam
+    - label: PERSON
+      value: Levine
+    add:
+    - label: PERSON
+      value: Adam Levine
+      occurrence: 2
+    - label: TIMEDATE
+      value: 20/30s
+    - label: TIMEDATE
+      value: 40 somethings
+  6:
+    reason: Removed a vague time expression, added an age range, and reduced duration spans to minimal boundaries.
+    remove:
+    - label: TIMEDATE
+      value: long term
+    - label: TIMEDATE
+      value: 18 months' treatment
+    - label: TIMEDATE
+      value: 12 month period
+    add:
+    - label: TIMEDATE
+      value: 44-73
+    - label: TIMEDATE
+      value: 18 months
+      occurrence: 2
+    - label: TIMEDATE
+      value: 12 month
+      occurrence: 2
+  7:
+    reason: Removed a standalone vague temporal adverb.
+    remove:
+    - label: TIMEDATE
+      value: again
+  9:
+    reason: Corrected time/amount confusion, vague adverbs, a duration boundary, and an organization label.
+    remove:
+    - label: AMOUNT
+      value: this time last week
+    - label: TIMEDATE
+      value: less than six hours a night
+    - label: TIMEDATE
+      value: past streaks
+    - label: TIMEDATE
+      value: yet
+    - label: TIMEDATE
+      value: 90-120 days at least
+    - label: PERSON
+      value: Cardinal Regiment
+    add:
+    - label: TIMEDATE
+      value: this time last week
+    - label: TIMEDATE
+      value: six hours
+    - label: TIMEDATE
+      value: 90-120 days
+    - label: ORGANIZATION
+      value: Cardinal Regiment
+  10:
+    reason: Narrowed a duration boundary and removed vague temporal adverbs.
+    remove:
+    - label: TIMEDATE
+      value: an hour or so
+    - label: TIMEDATE
+      value: ever
+    - label: TIMEDATE
+      value: never
+    - label: TIMEDATE
+      value: before
+    add:
+    - label: TIMEDATE
+      value: an hour
+  11:
+    reason: Labeled the film duration as TIMEDATE and merged full person names.
+    remove:
+    - label: AMOUNT
+      value: 3 hours and 20 minutes
+    - label: PERSON
+      value: Akira
+    - label: PERSON
+      value: Kurosawa
+    - label: PERSON
+      value: Tatsuya
+    - label: PERSON
+      value: Nakadai
+    add:
+    - label: TIMEDATE
+      value: 3 hours and 20 minutes
+    - label: PERSON
+      value: Akira Kurosawa
+    - label: PERSON
+      value: Tatsuya Nakadai
+  12:
+    reason: Added a missing software platform.
+    add:
+    - label: PRODUCT
+      value: Bukkit
+  13:
+    reason: Labeled Discord as a software platform PRODUCT in context.
+    remove:
+    - label: WORKOFART
+      value: discord
+    add:
+    - label: PRODUCT
+      value: discord
+  15:
+    reason: Added a missing product and merged the split Adobe Illustrator name.
+    remove:
+    - label: PRODUCT
+      value: Adobe
+    - label: PRODUCT
+      value: Illustrator
+    add:
+    - label: PRODUCT
+      value: Photoshop
+    - label: PRODUCT
+      value: Adobe Illustrator
+  16:
+    reason: Replaced an invalid COMPANY label with PRODUCT.
+    remove:
+    - label: COMPANY
+      value: Guided Advanced Tactical Rocket
+    add:
+    - label: PRODUCT
+      value: Guided Advanced Tactical Rocket
+  19:
+    reason: Relabeled a duration from AMOUNT to TIMEDATE.
+    remove:
+    - label: AMOUNT
+      value: 4 months
+    add:
+    - label: TIMEDATE
+      value: 4 months
+  20:
+    reason: Removed an extra word from a product span.
+    remove:
+    - label: PRODUCT
+      value: habitica bc
+    add:
+    - label: PRODUCT
+      value: habitica
+  21:
+    reason: Labeled Apache Impala as a product and removed an extra verb from the span.
+    remove:
+    - label: WORKOFART
+      value: Apache Impala is
+    add:
+    - label: PRODUCT
+      value: Apache Impala
+  23:
+    reason: Merged fragmented software product names.
+    remove:
+    - label: PRODUCT
+      value: Arcade Library
+    - label: PRODUCT
+      value: Studio
+    add:
+    - label: PRODUCT
+      value: Allegro Arcade Library
+    - label: PRODUCT
+      value: 'Gamemaker: Studio'
+  24:
+    reason: Merged the brand and product category into one span.
+    remove:
+    - label: PRODUCT
+      value: Matchbox
+    - label: PRODUCT
+      value: cars
+    add:
+    - label: PRODUCT
+      value: Matchbox cars
+  25:
+    reason: Corrected Blizzard Entertainment as one complete organization name.
+    remove:
+    - label: LOCATION
+      value: blizzard
+    - label: LOCATION
+      value: entertainment
+    add:
+    - label: ORGANIZATION
+      value: blizzard entertainment
+  26:
+    reason: Merged the full person name and labeled the font as PRODUCT.
+    remove:
+    - label: PERSON
+      value: Suvir
+    - label: PERSON
+      value: Mirchandani
+    - label: WORKOFART
+      value: Garamond
+    add:
+    - label: PERSON
+      value: Suvir Mirchandani
+    - label: PRODUCT
+      value: Garamond
+  27:
+    reason: Relabeled a commercial product from WORKOFART to PRODUCT.
+    remove:
+    - label: WORKOFART
+      value: The Executioner Bug Zapper Racket
+    add:
+    - label: PRODUCT
+      value: The Executioner Bug Zapper Racket
+  28:
+    reason: Added a missing Nintendo product/service name.
+    add:
+    - label: PRODUCT
+      value: nintendo account
+  29:
+    reason: Removed numeric identifiers that do not express quantities.
+    remove:
+    - label: TIMEDATE
+      value: 3339 or
+    - label: AMOUNT
+      value: '483'
+  30:
+    reason: Removed a generic department phrase from the organization label.
+    remove:
+    - label: ORGANIZATION
+      value: primary care department
+  33:
+    reason: Corrected JOB and LOCATION boundaries and added a time expression.
+    remove:
+    - label: JOB
+      value: Assurance
+    - label: LOCATION
+      value: Andreanneboro expects
+    add:
+    - label: TIMEDATE
+      value: coming fiscal quarter
+    - label: LOCATION
+      value: Andreanneboro
+  34:
+    reason: Removed a vague time word and added a missing quantity.
+    remove:
+    - label: TIMEDATE
+      value: earliest
+    add:
+    - label: AMOUNT
+      value: '150'
+  35:
+    reason: Removed a generic organizational function from the JOB label.
+    remove:
+    - label: JOB
+      value: Security
+  36:
+    reason: Removed a number that does not function as an AMOUNT.
+    remove:
+    - label: AMOUNT
+      value: '931'
+  37:
+    reason: Relabeled a count word from TIMEDATE to AMOUNT.
+    remove:
+    - label: TIMEDATE
+      value: five
+    add:
+    - label: AMOUNT
+      value: five
+  38:
+    reason: Removed a generic financial product name that is not a named organization.
+    remove:
+    - label: ORGANIZATION
+      value: Savings Account
+  39:
+    reason: Replaced an invalid COMPANY label with a time expression.
+    remove:
+    - label: COMPANY
+      value: Remembrance Day
+    add:
+    - label: TIMEDATE
+      value: Remembrance Day
+  40:
+    reason: Relabeled a fictional country from ORGANIZATION to LOCATION.
+    remove:
+    - label: ORGANIZATION
+      value: Spade Kingdom
+    add:
+    - label: LOCATION
+      value: Spade Kingdom
+  41:
+    reason: Removed a trailing conjunction from a time span and added a restaurant chain.
+    remove:
+    - label: TIMEDATE
+      value: twice week and
+    add:
+    - label: TIMEDATE
+      value: twice week
+    - label: ORGANIZATION
+      value: mcdonalds
+  42:
+    reason: Merged the company name and removed a generic function from the JOB label.
+    remove:
+    - label: LOCATION
+      value: Inc
+    - label: JOB
+      value: Quality
+    add:
+    - label: ORGANIZATION
+      value: Prohaska Inc
+  43:
+    reason: Removed invalid AMOUNT spans and added the actual count expression.
+    remove:
+    - label: AMOUNT
+      value: receipt
+    - label: AMOUNT
+      value: of both parental verification and consent
+    add:
+    - label: AMOUNT
+      value: both
+  44:
+    reason: Merged the full person name, removed an invalid amount, and added missing leagues.
+    remove:
+    - label: PERSON
+      value: Willy
+    - label: PERSON
+      value: Caballero
+    - label: AMOUNT
+      value: switch
+    add:
+    - label: PERSON
+      value: Willy Caballero
+    - label: ORGANIZATION
+      value: La Liga
+    - label: ORGANIZATION
+      value: Ligue 1
+  45:
+    reason: Merged the full person name and added an age expression and a missing club.
+    remove:
+    - label: PERSON
+      value: M'Baye
+    - label: PERSON
+      value: Niang
+    add:
+    - label: PERSON
+      value: M'Baye Niang
+    - label: TIMEDATE
+      value: 19-year-old
+    - label: ORGANIZATION
+      value: West Ham
+  47:
+    reason: Replaced COMPANY with ORGANIZATION and removed a generic category word.
+    remove:
+    - label: COMPANY
+      value: Schamberger - O'Connell
+    - label: ORGANIZATION
+      value: organization
+    add:
+    - label: ORGANIZATION
+      value: Schamberger - O'Connell
+  48:
+    reason: Merged a fragmented person name and removed the generic word 'school'.
+    remove:
+    - label: COMPANY
+      value: Dan
+    - label: PERSON
+      value: Riley
+    - label: PERSON
+      value: Sanford
+    - label: ORGANIZATION
+      value: school
+    add:
+    - label: PERSON
+      value: Dan Riley Sanford
+  49:
+    reason: Added the missing WebMD organization name.
+    add:
+    - label: ORGANIZATION
+      value: WebMD
+  50:
+    reason: Corrected Wal-Mart as an organization and removed a trailing conjunction.
+    remove:
+    - label: LOCATION
+      value: Wal-Mart and
+    add:
+    - label: ORGANIZATION
+      value: Wal-Mart
+  54:
+    reason: Added a missing organization and political party and completed the time span.
+    remove:
+    - label: TIMEDATE
+      value: hour week
+    add:
+    - label: ORGANIZATION
+      value: International Rescue Committee
+    - label: ORGANIZATION
+      value: Labour
+    - label: TIMEDATE
+      value: 37-and-a-half hour week
+  55:
+    reason: Merged the full Tampa Bay Lightning team name.
+    remove:
+    - label: ORGANIZATION
+      value: Bay Lightning
+    add:
+    - label: ORGANIZATION
+      value: Tampa Bay Lightning
+  57:
+    reason: Merged the full person name and removed a vague time span.
+    remove:
+    - label: PERSON
+      value: David
+    - label: PERSON
+      value: James
+    - label: PERSON
+      value: Thompson
+    - label: TIMEDATE
+      value: market downturns
+    add:
+    - label: PERSON
+      value: David James Thompson
+  58:
+    reason: Corrected publication, person, and organization names and removed generic or vague spans.
+    remove:
+    - label: ORGANIZATION
+      value: Company
+    - label: TIMEDATE
+      value: moment
+    - label: PERSON
+      value: Gabby
+    - label: PERSON
+      value: Giffords
+    - label: PERSON
+      value: Mitt
+    - label: PERSON
+      value: Romney
+    - label: JOB
+      value: employer
+    - label: TIMEDATE
+      value: How long
+    add:
+    - label: WORKOFART
+      value: The New York Times
+    - label: PERSON
+      value: Gabby Giffords
+    - label: PERSON
+      value: Mitt Romney
+    - label: ORGANIZATION
+      value: GOP
+  62:
+    reason: Corrected a clock-time label, a duration boundary, and a full person name.
+    remove:
+    - label: AMOUNT
+      value: '1:12'
+    - label: TIMEDATE
+      value: few minutes of
+    - label: PERSON
+      value: patrick
+    - label: PERSON
+      value: stewart
+    add:
+    - label: TIMEDATE
+      value: '1:12'
+    - label: TIMEDATE
+      value: few minutes
+    - label: PERSON
+      value: patrick stewart
+  63:
+    reason: Separated count and duration spans and removed a broken duration annotation.
+    remove:
+    - label: TIMEDATE
+      value: '3'
+    - label: TIMEDATE
+      value: times in one week
+    - label: TIMEDATE
+      value: '2'
+    - label: TIMEDATE
+      value: hour
+    add:
+    - label: AMOUNT
+      value: '3'
+    - label: TIMEDATE
+      value: one week
+  64:
+    reason: Corrected organization and person names and removed fields that are not jobs.
+    remove:
+    - label: LOCATION
+      value: United Emergency Response Coalition
+    - label: PERSON
+      value: Michael
+    - label: PERSON
+      value: Thompson
+    - label: JOB
+      value: Emergency Operations
+    - label: JOB
+      value: emergency response
+    - label: TIMEDATE
+      value: year
+    add:
+    - label: ORGANIZATION
+      value: United Emergency Response Coalition
+    - label: PERSON
+      value: Michael Thompson
+  65:
+    reason: Relabeled a restaurant name from LOCATION to ORGANIZATION.
+    remove:
+    - label: LOCATION
+      value: Joyride Taco House
+    add:
+    - label: ORGANIZATION
+      value: Joyride Taco House
+  66:
+    reason: Corrected a JOB boundary, removed generic team/division/location labels, and merged a person name.
+    remove:
+    - label: JOB
+      value: Business Intelligence Director at
+    - label: JOB
+      value: market analysis division
+    - label: JOB
+      value: analytics team
+    - label: PERSON
+      value: Amanda
+    - label: PERSON
+      value: Martinez
+    - label: LOCATION
+      value: Research Center
+    add:
+    - label: JOB
+      value: Business Intelligence Director
+    - label: PERSON
+      value: Amanda Martinez
+  67:
+    reason: Removed non-occupational finance spans and a vague temporal adverb.
+    remove:
+    - label: JOB
+      value: finance
+      all: true
+    - label: TIMEDATE
+      value: never
+  70:
+    reason: Corrected restaurant, count, and vague time/location labels.
+    remove:
+    - label: LOCATION
+      value: Black Bear Diner
+    - label: TIMEDATE
+      value: 3 times
+    - label: TIMEDATE
+      value: always
+    - label: LOCATION
+      value: Northwestern
+    add:
+    - label: ORGANIZATION
+      value: Black Bear Diner
+    - label: AMOUNT
+      value: '3'
+  72:
+    reason: Merged the full person name.
+    remove:
+    - label: PERSON
+      value: David
+    - label: PERSON
+      value: Wilson
+    add:
+    - label: PERSON
+      value: David Wilson
+  73:
+    reason: Removed generic product/job spans and merged a full person name containing a nickname.
+    remove:
+    - label: PRODUCT
+      value: product
+    - label: JOB
+      value: acting
+    - label: JOB
+      value: Voice-over
+    - label: PERSON
+      value: Norville
+    - label: PERSON
+      value: Shaggy
+    - label: PERSON
+      value: Rogers
+    add:
+    - label: PERSON
+      value: Norville "Shaggy" Rogers
+  74:
+    reason: Removed a meeting event from an invalid TIMEDATE label.
+    remove:
+    - label: TIMEDATE
+      value: meeting with the board
+  76:
+    reason: Merged full person names and added age expressions.
+    remove:
+    - label: PERSON
+      value: Jeremy
+    - label: PERSON
+      value: Abelson
+    - label: PERSON
+      value: Kimberly
+    - label: PERSON
+      value: Schmitz
+    - label: PERSON
+      value: Bobby
+    - label: PERSON
+      value: Kern
+    add:
+    - label: PERSON
+      value: Jeremy Abelson
+    - label: TIMEDATE
+      value: '27'
+    - label: PERSON
+      value: Kimberly Schmitz
+    - label: TIMEDATE
+      value: 34-year-old
+    - label: PERSON
+      value: Bobby Kern
+    - label: TIMEDATE
+      value: '25'
+  77:
+    reason: Corrected a title, a full person name, and a department label.
+    remove:
+    - label: AMOUNT
+      value: Current
+    - label: PERSON
+      value: Robert
+    - label: PERSON
+      value: Williams
+    - label: JOB
+      value: Geriatric Medicine Department
+    add:
+    - label: WORKOFART
+      value: Current Analysis of Age-Related Treatment Response Patterns
+    - label: PERSON
+      value: Robert Williams
+    - label: ORGANIZATION
+      value: Geriatric Medicine Department
+  78:
+    reason: Relabeled a citation year as TIMEDATE and removed a generic meal span.
+    remove:
+    - label: AMOUNT
+      value: '1989'
+    - label: TIMEDATE
+      value: meals
+    add:
+    - label: TIMEDATE
+      value: '1989'
+  79:
+    reason: Corrected a vintage year, restaurant/casino names, and generic time/location spans.
+    remove:
+    - label: COMPANY
+      value: '2012'
+    - label: LOCATION
+      value: Andre's
+      all: true
+    - label: LOCATION
+      value: Yusho
+    - label: TIMEDATE
+      value: long
+    - label: LOCATION
+      value: city
+    - label: LOCATION
+      value: Monte Carlo
+    add:
+    - label: TIMEDATE
+      value: '2012'
+    - label: ORGANIZATION
+      value: Andre's
+      all: true
+    - label: ORGANIZATION
+      value: Yusho
+    - label: ORGANIZATION
+      value: Monte Carlo
+  82:
+    reason: Merged full person and location names, removed a non-occupational field, and added a frequency.
+    remove:
+    - label: PERSON
+      value: Michael
+    - label: PERSON
+      value: James
+    - label: PERSON
+      value: Thompson
+    - label: LOCATION
+      value: Northern
+    - label: LOCATION
+      value: California
+    - label: JOB
+      value: psychology
+    add:
+    - label: PERSON
+      value: Michael James Thompson
+    - label: LOCATION
+      value: Northern California
+    - label: TIMEDATE
+      value: weekly
+  83:
+    reason: Merged the full person name and added a missing organization.
+    remove:
+    - label: PERSON
+      value: Robert
+    - label: PERSON
+      value: Walsh
+    add:
+    - label: PERSON
+      value: Robert Walsh
+    - label: ORGANIZATION
+      value: CloudGuard Systems
+  84:
+    reason: Removed non-concrete future spans and a generic employee JOB label.
+    remove:
+    - label: TIMEDATE
+      value: future
+      all: true
+    - label: JOB
+      value: employee
+  86:
+    reason: Replaced COMPANY fragments with a full PERSON name and removed a generic event span.
+    remove:
+    - label: COMPANY
+      value: Kim
+    - label: COMPANY
+      value: Jong-Un
+    - label: TIMEDATE
+      value: official visit
+    add:
+    - label: PERSON
+      value: Kim Jong-Un
+  87:
+    reason: Added the full work title and removed a nested location and a generic time span.
+    remove:
+    - label: LOCATION
+      value: West Virginia
+    - label: TIMEDATE
+      value: course of the research
+    add:
+    - label: WORKOFART
+      value: Diversity Rates in Mercer County, West Virginia Evaluation Essay
+  88:
+    reason: Removed a generic movie label and merged a full character name.
+    remove:
+    - label: WORKOFART
+      value: movie.
+    - label: PERSON
+      value: Cait
+      all: true
+    - label: PERSON
+      value: Sith
+      all: true
+    add:
+    - label: PERSON
+      value: Cait Sith
+      all: true
+  89:
+    reason: Corrected a count, a team, and a full organization name.
+    remove:
+    - label: TIMEDATE
+      value: '150'
+    - label: JOB
+      value: costume team
+    - label: ORGANIZATION
+      value: Fashion Studio
+    add:
+    - label: AMOUNT
+      value: '150'
+    - label: ORGANIZATION
+      value: International Fashion Studio
+  90:
+    reason: Split two usernames that had been merged into one span.
+    remove:
+    - label: PERSON
+      value: virginie.ritzkat1951 , kossiwa.pesantez
+    add:
+    - label: PERSON
+      value: virginie.ritzkat1951
+    - label: PERSON
+      value: kossiwa.pesantez
+  91:
+    reason: Removed dialogue placeholders and added the tour duration.
+    remove:
+    - label: PERSON
+      value: Person1
+      all: true
+    - label: PERSON
+      value: Person2
+      all: true
+    add:
+    - label: TIMEDATE
+      value: four days
+  93:
+    reason: Removed a school stage that is not a concrete time expression from TIMEDATE.
+    remove:
+    - label: TIMEDATE
+      value: junior high school
+  94:
+    reason: Added a missing election year.
+    add:
+    - label: TIMEDATE
+      value: '2020'
+  95:
+    reason: Removed invalid vague spans and added the age duration.
+    remove:
+    - label: AMOUNT
+      value: recent
+    - label: TIMEDATE
+      value: latest
+    add:
+    - label: TIMEDATE
+      value: 98 years old
+  97:
+    reason: Relabeled Benadryl from WORKOFART to PRODUCT.
+    remove:
+    - label: WORKOFART
+      value: Benadryl
+    add:
+    - label: PRODUCT
+      value: Benadryl
+  98:
+    reason: Merged the full person name and removed a sector that is not an occupation.
+    remove:
+    - label: PERSON
+      value: Hermina
+    - label: PERSON
+      value: Wisoky
+    - label: JOB
+      value: Research sector
+    add:
+    - label: PERSON
+      value: Hermina Wisoky
+  99:
+    reason: Relabeled the report from PRODUCT to WORKOFART and removed a generic Bank label.
+    remove:
+    - label: PRODUCT
+      value: Project Performance Audit Report
+    - label: ORGANIZATION
+      value: Bank
+    add:
+    - label: WORKOFART
+      value: Project Performance Audit Report

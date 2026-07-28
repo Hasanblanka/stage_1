@@ -1,0 +1,604 @@
+[
+  {
+    "unique_index": 0,
+    "action": "changed",
+    "reason": "Corrected the work-title label and removed a vague time word.",
+    "spans_before": 3,
+    "spans_after": 2
+  },
+  {
+    "unique_index": 1,
+    "action": "changed",
+    "reason": "Merged full person names and corrected a monetary amount and an invalid time span.",
+    "spans_before": 10,
+    "spans_after": 8
+  },
+  {
+    "unique_index": 2,
+    "action": "changed",
+    "reason": "Corrected missing and incomplete work-title spans.",
+    "spans_before": 5,
+    "spans_after": 6
+  },
+  {
+    "unique_index": 3,
+    "action": "changed",
+    "reason": "Removed a generic psychology field from the organization label.",
+    "spans_before": 5,
+    "spans_after": 4
+  },
+  {
+    "unique_index": 4,
+    "action": "changed",
+    "reason": "Corrected restaurant and casino names as organizations based on context.",
+    "spans_before": 8,
+    "spans_after": 9
+  },
+  {
+    "unique_index": 5,
+    "action": "changed",
+    "reason": "Merged a split person name and added age expressions.",
+    "spans_before": 14,
+    "spans_after": 15
+  },
+  {
+    "unique_index": 6,
+    "action": "changed",
+    "reason": "Removed a vague time expression, added an age range, and reduced duration spans to minimal boundaries.",
+    "spans_before": 14,
+    "spans_after": 14
+  },
+  {
+    "unique_index": 7,
+    "action": "changed",
+    "reason": "Removed a standalone vague temporal adverb.",
+    "spans_before": 16,
+    "spans_after": 15
+  },
+  {
+    "unique_index": 9,
+    "action": "changed",
+    "reason": "Corrected time/amount confusion, vague adverbs, a duration boundary, and an organization label.",
+    "spans_before": 13,
+    "spans_after": 11
+  },
+  {
+    "unique_index": 10,
+    "action": "changed",
+    "reason": "Narrowed a duration boundary and removed vague temporal adverbs.",
+    "spans_before": 19,
+    "spans_after": 16
+  },
+  {
+    "unique_index": 11,
+    "action": "changed",
+    "reason": "Labeled the film duration as TIMEDATE and merged full person names.",
+    "spans_before": 16,
+    "spans_after": 14
+  },
+  {
+    "unique_index": 12,
+    "action": "changed",
+    "reason": "Added a missing software platform.",
+    "spans_before": 2,
+    "spans_after": 3
+  },
+  {
+    "unique_index": 13,
+    "action": "changed",
+    "reason": "Labeled Discord as a software platform PRODUCT in context.",
+    "spans_before": 1,
+    "spans_after": 1
+  },
+  {
+    "unique_index": 15,
+    "action": "changed",
+    "reason": "Added a missing product and merged the split Adobe Illustrator name.",
+    "spans_before": 7,
+    "spans_after": 7
+  },
+  {
+    "unique_index": 16,
+    "action": "changed",
+    "reason": "Replaced an invalid COMPANY label with PRODUCT.",
+    "spans_before": 3,
+    "spans_after": 3
+  },
+  {
+    "unique_index": 19,
+    "action": "changed",
+    "reason": "Relabeled a duration from AMOUNT to TIMEDATE.",
+    "spans_before": 2,
+    "spans_after": 2
+  },
+  {
+    "unique_index": 20,
+    "action": "changed",
+    "reason": "Removed an extra word from a product span.",
+    "spans_before": 1,
+    "spans_after": 1
+  },
+  {
+    "unique_index": 21,
+    "action": "changed",
+    "reason": "Labeled Apache Impala as a product and removed an extra verb from the span.",
+    "spans_before": 3,
+    "spans_after": 3
+  },
+  {
+    "unique_index": 23,
+    "action": "changed",
+    "reason": "Merged fragmented software product names.",
+    "spans_before": 8,
+    "spans_after": 8
+  },
+  {
+    "unique_index": 24,
+    "action": "changed",
+    "reason": "Merged the brand and product category into one span.",
+    "spans_before": 3,
+    "spans_after": 2
+  },
+  {
+    "unique_index": 25,
+    "action": "changed",
+    "reason": "Corrected Blizzard Entertainment as one complete organization name.",
+    "spans_before": 3,
+    "spans_after": 2
+  },
+  {
+    "unique_index": 26,
+    "action": "changed",
+    "reason": "Merged the full person name and labeled the font as PRODUCT.",
+    "spans_before": 3,
+    "spans_after": 2
+  },
+  {
+    "unique_index": 27,
+    "action": "changed",
+    "reason": "Relabeled a commercial product from WORKOFART to PRODUCT.",
+    "spans_before": 1,
+    "spans_after": 1
+  },
+  {
+    "unique_index": 28,
+    "action": "changed",
+    "reason": "Added a missing Nintendo product/service name.",
+    "spans_before": 0,
+    "spans_after": 1
+  },
+  {
+    "unique_index": 29,
+    "action": "changed",
+    "reason": "Removed numeric identifiers that do not express quantities.",
+    "spans_before": 2,
+    "spans_after": 0
+  },
+  {
+    "unique_index": 30,
+    "action": "changed",
+    "reason": "Removed a generic department phrase from the organization label.",
+    "spans_before": 3,
+    "spans_after": 2
+  },
+  {
+    "unique_index": 33,
+    "action": "changed",
+    "reason": "Corrected JOB and LOCATION boundaries and added a time expression.",
+    "spans_before": 3,
+    "spans_after": 3
+  },
+  {
+    "unique_index": 34,
+    "action": "changed",
+    "reason": "Removed a vague time word and added a missing quantity.",
+    "spans_before": 2,
+    "spans_after": 2
+  },
+  {
+    "unique_index": 35,
+    "action": "changed",
+    "reason": "Removed a generic organizational function from the JOB label.",
+    "spans_before": 2,
+    "spans_after": 1
+  },
+  {
+    "unique_index": 36,
+    "action": "changed",
+    "reason": "Removed a number that does not function as an AMOUNT.",
+    "spans_before": 1,
+    "spans_after": 0
+  },
+  {
+    "unique_index": 37,
+    "action": "changed",
+    "reason": "Relabeled a count word from TIMEDATE to AMOUNT.",
+    "spans_before": 3,
+    "spans_after": 3
+  },
+  {
+    "unique_index": 38,
+    "action": "changed",
+    "reason": "Removed a generic financial product name that is not a named organization.",
+    "spans_before": 2,
+    "spans_after": 1
+  },
+  {
+    "unique_index": 39,
+    "action": "changed",
+    "reason": "Replaced an invalid COMPANY label with a time expression.",
+    "spans_before": 3,
+    "spans_after": 3
+  },
+  {
+    "unique_index": 40,
+    "action": "changed",
+    "reason": "Relabeled a fictional country from ORGANIZATION to LOCATION.",
+    "spans_before": 7,
+    "spans_after": 7
+  },
+  {
+    "unique_index": 41,
+    "action": "changed",
+    "reason": "Removed a trailing conjunction from a time span and added a restaurant chain.",
+    "spans_before": 1,
+    "spans_after": 2
+  },
+  {
+    "unique_index": 42,
+    "action": "changed",
+    "reason": "Merged the company name and removed a generic function from the JOB label.",
+    "spans_before": 3,
+    "spans_after": 2
+  },
+  {
+    "unique_index": 43,
+    "action": "changed",
+    "reason": "Removed invalid AMOUNT spans and added the actual count expression.",
+    "spans_before": 3,
+    "spans_after": 2
+  },
+  {
+    "unique_index": 44,
+    "action": "changed",
+    "reason": "Merged the full person name, removed an invalid amount, and added missing leagues.",
+    "spans_before": 7,
+    "spans_after": 7
+  },
+  {
+    "unique_index": 45,
+    "action": "changed",
+    "reason": "Merged the full person name and added an age expression and a missing club.",
+    "spans_before": 6,
+    "spans_after": 7
+  },
+  {
+    "unique_index": 47,
+    "action": "changed",
+    "reason": "Replaced COMPANY with ORGANIZATION and removed a generic category word.",
+    "spans_before": 3,
+    "spans_after": 2
+  },
+  {
+    "unique_index": 48,
+    "action": "changed",
+    "reason": "Merged a fragmented person name and removed the generic word 'school'.",
+    "spans_before": 6,
+    "spans_after": 3
+  },
+  {
+    "unique_index": 49,
+    "action": "changed",
+    "reason": "Added the missing WebMD organization name.",
+    "spans_before": 0,
+    "spans_after": 1
+  },
+  {
+    "unique_index": 50,
+    "action": "changed",
+    "reason": "Corrected Wal-Mart as an organization and removed a trailing conjunction.",
+    "spans_before": 2,
+    "spans_after": 2
+  },
+  {
+    "unique_index": 54,
+    "action": "changed",
+    "reason": "Added a missing organization and political party and completed the time span.",
+    "spans_before": 3,
+    "spans_after": 5
+  },
+  {
+    "unique_index": 55,
+    "action": "changed",
+    "reason": "Merged the full Tampa Bay Lightning team name.",
+    "spans_before": 13,
+    "spans_after": 13
+  },
+  {
+    "unique_index": 57,
+    "action": "changed",
+    "reason": "Merged the full person name and removed a vague time span.",
+    "spans_before": 10,
+    "spans_after": 7
+  },
+  {
+    "unique_index": 58,
+    "action": "changed",
+    "reason": "Corrected publication, person, and organization names and removed generic or vague spans.",
+    "spans_before": 19,
+    "spans_after": 15
+  },
+  {
+    "unique_index": 59,
+    "action": "removed",
+    "reason": "A long unrelated random-word fragment follows a useful opening.",
+    "spans_before": 14,
+    "spans_after": 0
+  },
+  {
+    "unique_index": 60,
+    "action": "removed",
+    "reason": "Severe recurring encoding corruption appears throughout the text.",
+    "spans_before": 15,
+    "spans_after": 0
+  },
+  {
+    "unique_index": 61,
+    "action": "removed",
+    "reason": "Severe OCR errors prevent reliable annotation.",
+    "spans_before": 15,
+    "spans_after": 0
+  },
+  {
+    "unique_index": 62,
+    "action": "changed",
+    "reason": "Corrected a clock-time label, a duration boundary, and a full person name.",
+    "spans_before": 12,
+    "spans_after": 11
+  },
+  {
+    "unique_index": 63,
+    "action": "changed",
+    "reason": "Separated count and duration spans and removed a broken duration annotation.",
+    "spans_before": 20,
+    "spans_after": 18
+  },
+  {
+    "unique_index": 64,
+    "action": "changed",
+    "reason": "Corrected organization and person names and removed fields that are not jobs.",
+    "spans_before": 13,
+    "spans_after": 9
+  },
+  {
+    "unique_index": 65,
+    "action": "changed",
+    "reason": "Relabeled a restaurant name from LOCATION to ORGANIZATION.",
+    "spans_before": 10,
+    "spans_after": 10
+  },
+  {
+    "unique_index": 66,
+    "action": "changed",
+    "reason": "Corrected a JOB boundary, removed generic team/division/location labels, and merged a person name.",
+    "spans_before": 13,
+    "spans_after": 9
+  },
+  {
+    "unique_index": 67,
+    "action": "changed",
+    "reason": "Removed non-occupational finance spans and a vague temporal adverb.",
+    "spans_before": 16,
+    "spans_after": 13
+  },
+  {
+    "unique_index": 68,
+    "action": "removed",
+    "reason": "Severe recurring encoding corruption appears throughout the text.",
+    "spans_before": 17,
+    "spans_after": 0
+  },
+  {
+    "unique_index": 69,
+    "action": "removed",
+    "reason": "Severe recurring encoding corruption appears throughout the text.",
+    "spans_before": 17,
+    "spans_after": 0
+  },
+  {
+    "unique_index": 70,
+    "action": "changed",
+    "reason": "Corrected restaurant, count, and vague time/location labels.",
+    "spans_before": 12,
+    "spans_after": 10
+  },
+  {
+    "unique_index": 71,
+    "action": "removed",
+    "reason": "Severe recurring encoding corruption appears throughout the text.",
+    "spans_before": 18,
+    "spans_after": 0
+  },
+  {
+    "unique_index": 72,
+    "action": "changed",
+    "reason": "Merged the full person name.",
+    "spans_before": 13,
+    "spans_after": 12
+  },
+  {
+    "unique_index": 73,
+    "action": "changed",
+    "reason": "Removed generic product/job spans and merged a full person name containing a nickname.",
+    "spans_before": 21,
+    "spans_after": 16
+  },
+  {
+    "unique_index": 74,
+    "action": "changed",
+    "reason": "Removed a meeting event from an invalid TIMEDATE label.",
+    "spans_before": 11,
+    "spans_after": 10
+  },
+  {
+    "unique_index": 75,
+    "action": "removed",
+    "reason": "Severe recurring encoding corruption appears throughout the text.",
+    "spans_before": 19,
+    "spans_after": 0
+  },
+  {
+    "unique_index": 76,
+    "action": "changed",
+    "reason": "Merged full person names and added age expressions.",
+    "spans_before": 17,
+    "spans_after": 17
+  },
+  {
+    "unique_index": 77,
+    "action": "changed",
+    "reason": "Corrected a title, a full person name, and a department label.",
+    "spans_before": 12,
+    "spans_after": 11
+  },
+  {
+    "unique_index": 78,
+    "action": "changed",
+    "reason": "Relabeled a citation year as TIMEDATE and removed a generic meal span.",
+    "spans_before": 12,
+    "spans_after": 11
+  },
+  {
+    "unique_index": 79,
+    "action": "changed",
+    "reason": "Corrected a vintage year, restaurant/casino names, and generic time/location spans.",
+    "spans_before": 20,
+    "spans_after": 18
+  },
+  {
+    "unique_index": 80,
+    "action": "removed",
+    "reason": "Keyword spam and meaningless word lists dominate the text.",
+    "spans_before": 12,
+    "spans_after": 0
+  },
+  {
+    "unique_index": 81,
+    "action": "removed",
+    "reason": "The text contains severe multi-layer encoding corruption.",
+    "spans_before": 19,
+    "spans_after": 0
+  },
+  {
+    "unique_index": 82,
+    "action": "changed",
+    "reason": "Merged full person and location names, removed a non-occupational field, and added a frequency.",
+    "spans_before": 9,
+    "spans_after": 6
+  },
+  {
+    "unique_index": 83,
+    "action": "changed",
+    "reason": "Merged the full person name and added a missing organization.",
+    "spans_before": 9,
+    "spans_after": 9
+  },
+  {
+    "unique_index": 84,
+    "action": "changed",
+    "reason": "Removed non-concrete future spans and a generic employee JOB label.",
+    "spans_before": 19,
+    "spans_after": 16
+  },
+  {
+    "unique_index": 86,
+    "action": "changed",
+    "reason": "Replaced COMPANY fragments with a full PERSON name and removed a generic event span.",
+    "spans_before": 5,
+    "spans_after": 3
+  },
+  {
+    "unique_index": 87,
+    "action": "changed",
+    "reason": "Added the full work title and removed a nested location and a generic time span.",
+    "spans_before": 14,
+    "spans_after": 13
+  },
+  {
+    "unique_index": 88,
+    "action": "changed",
+    "reason": "Removed a generic movie label and merged a full character name.",
+    "spans_before": 15,
+    "spans_after": 12
+  },
+  {
+    "unique_index": 89,
+    "action": "changed",
+    "reason": "Corrected a count, a team, and a full organization name.",
+    "spans_before": 12,
+    "spans_after": 11
+  },
+  {
+    "unique_index": 90,
+    "action": "changed",
+    "reason": "Split two usernames that had been merged into one span.",
+    "spans_before": 6,
+    "spans_after": 7
+  },
+  {
+    "unique_index": 91,
+    "action": "changed",
+    "reason": "Removed dialogue placeholders and added the tour duration.",
+    "spans_before": 9,
+    "spans_after": 5
+  },
+  {
+    "unique_index": 92,
+    "action": "removed",
+    "reason": "The record contains generated nonsense and mixed-language fragments.",
+    "spans_before": 9,
+    "spans_after": 0
+  },
+  {
+    "unique_index": 93,
+    "action": "changed",
+    "reason": "Removed a school stage that is not a concrete time expression from TIMEDATE.",
+    "spans_before": 15,
+    "spans_after": 14
+  },
+  {
+    "unique_index": 94,
+    "action": "changed",
+    "reason": "Added a missing election year.",
+    "spans_before": 3,
+    "spans_after": 4
+  },
+  {
+    "unique_index": 95,
+    "action": "changed",
+    "reason": "Removed invalid vague spans and added the age duration.",
+    "spans_before": 4,
+    "spans_after": 3
+  },
+  {
+    "unique_index": 97,
+    "action": "changed",
+    "reason": "Relabeled Benadryl from WORKOFART to PRODUCT.",
+    "spans_before": 8,
+    "spans_after": 8
+  },
+  {
+    "unique_index": 98,
+    "action": "changed",
+    "reason": "Merged the full person name and removed a sector that is not an occupation.",
+    "spans_before": 6,
+    "spans_after": 4
+  },
+  {
+    "unique_index": 99,
+    "action": "changed",
+    "reason": "Relabeled the report from PRODUCT to WORKOFART and removed a generic Bank label.",
+    "spans_before": 13,
+    "spans_after": 12
+  }
+]

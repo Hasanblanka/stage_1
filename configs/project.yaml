@@ -1,0 +1,23 @@
+project:
+  name: polygraf-applied-nlp-ner
+  seed: 42
+
+stage1:
+  source:
+    repo_id: polygraf-ai/applied-nlp-ner-candidate-starter-100
+    revision: 11cabd333e6d16531b8dd96d2198bc291d383cd3
+    split_file: data/train-00000-of-00001.parquet
+  expected_records: 100
+  raw_dir: data/raw/stage1_starter
+  artifact_dir: artifacts/stage1
+
+labels:
+  - PERSON
+  - ORGANIZATION
+  - LOCATION
+  - TIMEDATE
+  - PRODUCT
+  - WORKOFART
+  - JOB
+  - AMOUNT
+

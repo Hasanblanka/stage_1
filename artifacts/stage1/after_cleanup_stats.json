@@ -1,0 +1,29 @@
+{
+  "records_total": 90,
+  "unique_indices": 90,
+  "spans_total": 609,
+  "label_counts": {
+    "PERSON": 91,
+    "ORGANIZATION": 82,
+    "LOCATION": 60,
+    "TIMEDATE": 122,
+    "PRODUCT": 81,
+    "WORKOFART": 50,
+    "JOB": 58,
+    "AMOUNT": 65
+  },
+  "unknown_label_counts": {},
+  "issues_total": 17,
+  "issue_counts": {
+    "BOUNDARY_PUNCTUATION": 3,
+    "FUNCTION_WORD_BOUNDARY": 12,
+    "POSSESSIVE_INCLUDED": 2
+  },
+  "severity_counts": {
+    "warning": 17
+  },
+  "records_with_errors": 0,
+  "records_with_warnings": 12,
+  "records_flagged": 12,
+  "records_without_automatic_flags": 78
+}
