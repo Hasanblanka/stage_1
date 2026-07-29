@@ -69,3 +69,5 @@ src/polygraf_ner/       Reusable data I/O and deterministic audit code
 
 Raw and processed datasets are intentionally excluded from GitHub and should
 live in their corresponding Hugging Face repositories.
+
+HuggingFace Dataset: https://huggingface.co/datasets/Hasanblanka/polygraf-ner-stage1-cleaned
